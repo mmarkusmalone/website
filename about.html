@@ -7,52 +7,32 @@
     <link rel="stylesheet" href="https://use.typekit.net/lle1kea.css">
     <title>About</title>
 </head>
-<body class="obody">
-    <div class="container">
-        <div class="sidebar">
-            <a href="index.html">Home</a>
-            <a href="resume.html">Resume</a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html" class="active">About</a>
-            <a href="writing.html">Writing</a>
-        </div>
-        <div class="mainR">
-            <div class="columns-wrapper">
-                <div class="lcolumn">
-                    <img src="images/barc.JPG">
-                    <img src="images/rockbeach.JPG">
-                    <img src="images/retiro.jpg">
-                    <img src="images/ibiza.JPG">
-                    <img src="images/blockwater.JPG">
-                    <img src="images/glass.JPG">
-                </div>
-                <div class="rcolumn">
-                    <img src="images/pure.JPG">
-                    <img src="images/lisboa.JPG">
-                    <img src="images/headshot.png">
-                    <img src="images/retirot.JPG">
-                    <img src="images/ibiza2.JPG">
-                    <img src="images/wheat.JPG">
-                </div>
-                <div class="about-text">
-                    <h1>About Me</h1>
-                    <p>I am a current Senior at Duke University, pursuing a B.S. in Computer Science with a concentration in Machine Learning/AI and a minor in Creative Writing. My work sits at the intersection of technical depth and creative expression: I am passionate about developing technologies that leverage AI to foster deeper learning, sustainability, and human connectivity.
-                    </p>
+<body>
+   <nav class="nav-container" id="navMenu">
+      <button class="nav-button" onclick="toggleNav()">
+        <span class="arrow-icon">&#x21dd;</span> </button>
+      </button>
 
-                    <p>I began coding as a freshman in high school, taking every elective offered and building mini games in my free time for friends and myself. Some of my early projects included an ASMR meditation web app, a cat-themed version of Tetris, and a drawing app restricted to circles. Since then, my passion has deepened through rigorous coursework at Duke, professional experience, and personal projects (which have grown only a little more mature).
-                    </p>
-                    <p>Over the past few years, I’ve designed and deployed AI-driven solutions across academic, professional, and personal contexts. As an Artificial Intelligence Intern at Splash Sports (2024–2025), I developed production-ready RAG applications and modular frameworks for customizable AI agents. Last summer, I created an AI agent that was deployed across multiple teams to streamline the bug-fixing process. This experience taught me that building responsible, trustworthy AI is as much about people as it is about code—earning the trust of colleagues required continuous iteration and thoughtful design. Seeing my work go to production inspired me to extend my curiosity into personal projects in my free time.</p>
-                    <p>I’ve since built projects like VADMap, a full-stack emotional mapping platform powered by a custom RoBERTa model; Dream Catcher, a graph-based dream association tool; and Dance Partner, an app that tracks movement in real time and outputs a skeleton and aura to match. These projects allowed me to combine engineering with creativity, translating abstract ideas into user-friendly applications without losing the spark of their inspiration.
-                    </p>
-                    <p>Another core part of my passion is human connectivity. At Duke, I serve as an Undergraduate Teaching Assistant for Design and Analysis of Algorithms, where I co-teach recitations and build classroom communities that encourage curiosity and persistence. My work as a coding tutor, FEMMES+ mentor, DTech member, and Applied Machine Learning Engineer has strengthened my ability to collaborate across diverse teams while supporting inclusive growth in STEM.
-                    </p>
-                    <p>Beyond computer science, I actively explore philosophy, literature, and sociology, balancing each semester with both STEM and humanities courses such as Human Flourishing in the Digital Age and Bad Behaviour. This interdisciplinary engagement grounds my technical work in broader questions of values, culture, and meaning.
-                    </p>
-                    <p>Outside of academics, I am a DJ at WXDU, a photographer, and the founder of Allies With Advice, a mentorship platform for pediatric arthritis patients that enhances digital accessibility. I also enjoy meditation, reading, and vintage fashion.
-                    </p>
-                    </div>
-            </div>
-        </div>
+      <div class="nav-items">
+        <a href="index.html" class="item item-1"><img src="images/homeicon.jpg" alt="Home"></a>
+        <a href="projects.html" class="item item-4"><img src="images/projectsnew.jpg" alt="Projects"></a>
+        <a href="writing.html" class="item item-2"><img src="images/writingiconnew.jpg" alt="Writing"></a>
+        <a href="resume.html" class="item item-3"><img src="images/resumenew.jpg" alt="Resume"></a>
+      </div>
+    </nav>
+    <script src="source.js"></script>
+    <header class="about-header">
+        <p>About me</p>
+    </header>
+    <div class = "first-row-about">
+        <img src="./images/me.png" alt="Maya Markus-Malone">
+        <p>
+        Hi Joe,
+
+        I hope this message finds you well. I came across your profile on LinkedIn and noticed your background in psychology. I am currently a rising senior at Duke—my major is computer science but I am also passionate about studying psychology, writing, and philosophy. This summer, I am working as an AI engineer while developing a project with a professor that uses VAD vectors from an emotional detection model to create a 3D emotional map of journal entries. I am interested in hearing how you integrate your academic background into your work as a software engineer manager. If you have any tips or time for a chat sometime, I would be grateful to learn from your experience. Let me know!
+
+        Thank you,
+        Maya Markus-Malone</p>
     </div>
 </body>
 </html>

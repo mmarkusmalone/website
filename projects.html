@@ -1,85 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.typekit.net/lle1kea.css">
-  <title>Projects</title>
-</head>
-<body class="obody">
-  <div class="container">
-    <div class="sidebar">
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html" class="active">Projects</a>
-        <a href="about.html">About</a>
-        <a href="writing.html">Writing</a>
-    </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lle1kea.css">
+    <title>Projects</title>
+  </head>
+  <body class="projects-page">
+    <nav class="nav-container" id="navMenu">
+      <button class="nav-button" onclick="toggleNav()">
+        <span class="arrow-icon">&#x21dd;</span> </button>
+      </button>
 
-    <!-- Main content -->
-    <div class="mainR">
-      <h1 style="text-align: center;">Projects</h1>
-
-      <h2 style="text-align: center;">Personal Projects</h2>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <h2><a href="https://github.com/mmarkusmalone/VADMAP_SITE" target="_blank">VADMap</a></h2>
-          <img src="images/VAD.gif" alt="VADMap project gif">
-          <p>VADMap is an interactive web application that transforms personal journaling into a rich, visual exploration of emotion. By combining AI-powered sentiment analysis with immersive 3D graphics, it helps users reflect on their emotional journeys over time through the psychological dimensions of Valence, Arousal, and Dominance (VAD). The frontend was built with Javascript/HTML/CSS. The backend was built with Python and Flask. The model was finetuned with HuggingFace and PyTorch. </p>
-          <p><a href="https://huggingface.co/datasets/mmarkusmalone/journal-entries-emotion-detection-vad" target="_blank"><u>Go to the VAD Journal dataset I labeled using supervised labeling methods.</u></a></p>
-          <p><a href="https://huggingface.co/mmarkusmalone/VAD_Journal_Finetuned" target="_blank"><u>Go to the RoBERTa model I finetuned on the dataset above.</u></a></p>
-
-        </div>
-
-        <div class="project-card">
-          <h2><a href="https://github.com/mmarkusmalone/dance_partner" target="_blank">Dance Partner</a></h2>
-          <img src="images/dance.gif" alt="Dance Partner project gif">
-          <p>A web app that uses MediaPipe for real-time motion tracking: skeleton + aura effects over your webcam feed. Interactive buttons let you adjust colors, and WebGL is used for dynamic visual ambiance synced with music. Built with JS/HTML/CSS.</p>
-        </div>
-
-
-        <div class="project-card">
-          <h2><a href="https://github.com/mmarkusmalone/scrap" target="_blank">Scrap</a></h2>
-          <img src="images/scrap.gif" alt="Scrap project gif">
-          <p>A collage/remix tool for digital content: combine media (images, video, etc.) in creative ways. Helps user explore visual recombination. Built with HTML/CSS. </p>
-        </div>
-
-        <div class="project-card">
-          <h2><a href="https://github.com/mmarkusmalone/dreamscape" target="_blank">Dreamscape</a></h2>
-          <img src="images/dreamscape.gif" alt="Dreamscape project gif">
-          <p>A web app that extracts proper nouns from dream entries using an LLM, mapping co-occurring terms into interactive graph visualizations to reveal recurring dream themes.</p>
-        </div>
-
-        <div class="project-card">
-          <h2><a href="https://www.allieswithadvice.org" target="_blank">Allies with Advice Website</a></h2>
-          <img src="images/allies.gif" alt="Dreamscape project gif">
-          <p>I independently designed and launched Allies With Advice, a digital platform that connects mentors with pediatric arthritis patients through a supportive letter-exchange system. The site enhances accessibility and community engagement by providing a safe space for sharing experiences, encouragement, and guidance tailored to diverse user needs.</p>
-        </div>
+      <div class="nav-items">
+        <a href="index.html" class="item item-1"><img src="images/homeicon.jpg" alt="Home"></a>
+        <a href="resume.html" class="item item-2"><img src="images/resumenew.jpg" alt="Resume"></a>
+        <a href="about.html" class="item item-3"><img src="images/abouticon.jpg" alt="About"></a>
+        <a href="writing.html" class="item item-4"><img src="images/writingiconnew.jpg" alt="Writing"></a>
       </div>
-
-      <h2 style="text-align: center;">Hackathons</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h2><a href="https://github.com/mmarkusmalone/BCup" target="_blank">BCup</a></h2>
-          <img src="images/trimbcuop.gif" alt="Cup project gif">
-          <p>Developed for the Code For Good Hackathon 2025: Collaborated with Lindsay Feinberg, Isaac Martinez, and Jack Steel to develop a gaming leaderboard app for our friends. We all use it when we are together, and it has motivated us to play more games to improve our leaderboard rankings. I implemented secure user authentication and dynamic database storage with Firebase and MongoDB using a Python backend script.</p>
+    </nav>
+    <header class="gallery-header">
+      <p style = "font-size: 80px;">Projects</p>
+      <p>Selected works / Personal & Hackathons</p>
+    </header>
+    <main class="horizontal-gallery">
+      <section class="project-item" id="project1">
+        <div class="image-wrapper">
+          <img src="images/VAD.gif" alt="VADMap">
+          <div class="project-overlay">
+            <h2>VADMap</h2>
+            <p>AI-powered sentiment analysis and 3D journaling.</p>
+            <a href="#details-vad" class="view-btn">View Details</a>
+          </div>
         </div>
+      </section>
 
-        <div class="project-card">
-          <h2><a href="https://github.com/mmarkusmalone/iSpy" target="_blank">iSpy</a></h2>
-          <img src="images/ispy.gif" alt="iSpy project gif">
-          <p>Developed for the Ignite Hackathon 2023: Integrated ChatGPT and photo processing to generate interactive clues for an ios iSpy app with Swift. The output is a playful camera-based experience. I worked alongside Lindsay Feinberg, Amelia Lane, and Meghan Gill to build the app. </p>
+      <section class="project-item" id="project2">
+        <div class="image-wrapper">
+          <img src="images/dance.gif" alt="Dance Partner">
+          <div class="project-overlay">
+            <h2>Dance Partner</h2>
+            <p>Real-time motion tracking with MediaPipe.</p>
+            <a href="#details-dance" class="view-btn">View Details</a>
+          </div>
         </div>
+      </section>
+      <section class="project-item" id="project2">
+        <div class="image-wrapper">
+          <img src="images/dance.gif" alt="Dance Partner">
+          <div class="project-overlay">
+            <h2>Dance Partner</h2>
+            <p>Real-time motion tracking with MediaPipe.</p>
+            <a href="#details-dance" class="view-btn">View Details</a>
+          </div>
+        </div>
+      </section>
+      <section class="project-item" id="project2">
+        <div class="image-wrapper">
+          <img src="images/dance.gif" alt="Dance Partner">
+          <div class="project-overlay">
+            <h2>Dance Partner</h2>
+            <p>Real-time motion tracking with MediaPipe.</p>
+            <a href="#details-dance" class="view-btn">View Details</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <div class="project-card">
-          <h2><a href="https://github.com/mmarkusmalone/Kidfolio" target="_blank">Kidfolio</a></h2>
-          <img src="images/kidfolio.gif" alt="Kidfolio project gif">
-          <p>Developed for the Code For Good Hackathon 2024: Collaborated with Lindsay, Isaac, and Jack again to build KidFolio, a kid's investing game. I designed and developed investing game logic for the mobile app using React and Typescript.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+    <script src="source.js"></script>
+  </body>
 </html>
