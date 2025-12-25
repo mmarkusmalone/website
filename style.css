@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    letter-spacing: 1px;
+    font-style: normal;
+    font-size: x-small;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.portfolio-grid {
+    display: grid;
+    /* Left: Auto, Middle: 25%, Right: Auto */
+    grid-template-columns: 1fr 20% 1fr;
+    height: 100vh; /* Takes up 100% of the screen height */
+    width: 100vw;  /* Takes up 100% of the screen width */
+}
+
+.side-column {
+    display: grid;
+    /* Creates two rows that always take up 50% height each */
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+}
+
+.grid-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* This ensures images fill the 50% box without stretching */
+    object-fit: cover;
+
+}
+
+.bio-column {
+    padding: 40px 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+
+}
+
+.bio-column p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+/* For mobile: stack vertically and let height adjust to content */
+@media (max-width: 780px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .side-column {
+        height: auto;
+        grid-template-rows: repeat(2, 300px); /* Fixed height on mobile so images don't vanish */
+    }
+    .grid-item {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+}
