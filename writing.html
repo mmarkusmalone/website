@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/lle1kea.css">
     <title>Writing</title>
 </head>
-<body class = "obody">
+<body>
     <nav class="nav-container" id="navMenu">
       <button class="nav-button" onclick="toggleNav()">
         <span class="arrow-icon">&#x21dd;</span> </button>
@@ -24,5 +24,71 @@
     <header class="writing-header">
         <p>Writing</p>
     </header>
+    <main class="writing-grid">
+      <div class="story-card" onclick="openModal('story1')">
+          <div class="card-header">
+              <span class="story-date">Dec 2025</span>
+              <h2 class="story-title">the digital silhouette</h2>
+          </div>
+          <img src="images/writing1.jpg" alt="Story Image" class="story-photo">
+          <p class="story-blurb">An exploration into AI-generated interfaces.</p>
+          
+          <template id="story1">
+              <h1>the digital silhouette</h1>
+              <img src="images/writing1.jpg" style="width:100%; margin-bottom:20px;">
+              <p>Your full long-form story text goes here...</p>
+          </template>
+      </div>
+      <div class="story-card" onclick="openModal('story1')">
+          <div class="card-header">
+              <span class="story-date">Dec 2025</span>
+              <h2 class="story-title">the digital silhouette</h2>
+          </div>
+          <img src="images/writing1.jpg" alt="Story Image" class="story-photo">
+          <p class="story-blurb">An exploration into AI-generated interfaces.</p>
+          
+          <template id="story1">
+              <h1>the digital silhouette</h1>
+              <img src="images/writing1.jpg" style="width:100%; margin-bottom:20px;">
+              <p>Your full long-form story text goes here...</p>
+          </template>
+      </div>
+      <div class="story-card" onclick="openModal('story1')">
+          <div class="card-header">
+              <span class="story-date">Dec 2025</span>
+              <h2 class="story-title">the digital silhouette</h2>
+          </div>
+          <img src="images/writing1.jpg" alt="Story Image" class="story-photo">
+          <p class="story-blurb">An exploration into AI-generated interfaces.</p>
+          
+          <template id="story1">
+              <h1>the digital silhouette</h1>
+              <img src="images/writing1.jpg" style="width:100%; margin-bottom:20px;">
+              <p>Your full long-form story text goes here...</p>
+          </template>
+      </div>
+      <div class="story-card" onclick="openModal('story1')">
+          <div class="card-header">
+              <span class="story-date">Dec 2025</span>
+              <h2 class="story-title">the digital silhouette</h2>
+          </div>
+          <img src="images/writing1.jpg" alt="Story Image" class="story-photo">
+          <p class="story-blurb">An exploration into AI-generated interfaces.</p>
+          
+          <template id="story1">
+              <h1>the digital silhouette</h1>
+              <img src="images/writing1.jpg" style="width:100%; margin-bottom:20px;">
+              <p>Your full long-form story text goes here...</p>
+          </template>
+      </div>
+  </main>
+
+  <div id="storyModal" class="modal">
+      <div class="modal-content">
+          <span class="close-button" onclick="closeModal()">&times;</span>
+          <div id="modalBody"></div>
+      </div>
+  </div>
+  <script src = "source.js"></script>
 </body>
 </html>
