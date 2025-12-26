@@ -156,9 +156,9 @@ body.projects-page {
 
 #project1 { --overlay-color: rgba(134, 206, 219, 0.5); --hover-color: rgba(134, 206, 219, 0.8);} 
 #project2 { --overlay-color: rgba(255, 100, 126, 0.5); --hover-color: rgba(255, 100, 126, 0.8);}
-#project3 { --overlay-color: rgba(113, 158, 255, 0.5); --hover-color: rgba(113, 158, 255, 0.8);}
-#project4 { --overlay-color: rgba(243, 192, 227, 0.5); --hover-color: rgba(243, 192, 227, 0.8);}
-#project5 { --overlay-color: rgba(250, 138, 158, 0.5); --hover-color: rgba(246, 114, 138, 0.8);}
+#project3 { --overlay-color: rgba(113, 158, 255, 0.3); --hover-color: rgba(113, 158, 255, 0.8);}
+#project4 { --overlay-color: rgba(246, 181, 83, 0.5); --hover-color: rgba(246, 181, 83, 0.8);}
+#project5 { --overlay-color: rgba(250, 138, 158, 0.2); --hover-color: rgba(246, 114, 138, 0.8);}
 #project6 { --overlay-color: rgba(245, 199, 239, 0.5); --hover-color: rgba(245, 199, 239, 0.8);}
 #project7 { --overlay-color: rgba(155, 183, 242, 0.5); --hover-color: rgba(155, 183, 242, 0.8);}
 #project8 { --overlay-color: rgba(186, 235, 161, 0.5); --hover-color: rgba(186, 235, 161 ,0.8);}
